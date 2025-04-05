@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="/css/categories.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<!-- category-pages.ejs -->
+<div class="ad-space">
+    <!-- <p class="ad-label">ADVERTISEMENT</p> -->
+    <img src="/images/hori.jpg" alt="Advertisement">
+</div>
+<%- include('partials/navbar2') %>
+<%- include('partials/top-heading') %>
+<div class="category-pages-container">
+    
+    
+    <div class="category-pages-grid">
+        <a href="/article" style="text-decoration: none; color: black;">
+            <div class="category-pages-article">
+            <img src="/images/cat1.jpg" alt="Article Image">
+            <div class="category-pages-content">
+                <h3>FILE NEWS</h3>
+                <h2>Article Title 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ducimus necessitatibus, aspernatur non quasi quo deserunt? Perferendis sapiente atque totam quod repellendus neque earum, tenetur cumque. Atque ipsam eligendi pariatur!</p>
+            </div>
+        </div></a>
+        <a href="/article" style="text-decoration: none; color: black;"><div class="category-pages-article">
+            <img src="/images/cat2.jpg" alt="Article Image">
+            <div class="category-pages-content">
+                <h3>FILE NEWS</h3>
+                <h2>Article Title 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corporis ab, fuga consequuntur recusandae possimus enim soluta accusamus saepe quis! Dolor ab aut laboriosam assumenda voluptatibus molestias quaerat accusantium. Harum.</p>
+            </div>
+        </div></a>
+        
+        <a href="/article" style="text-decoration: none; color: black;"><div class="category-pages-article">
+            <img src="/images/cat1.jpg" alt="Article Image">
+            <div class="category-pages-content">
+                <h3>FILE NEWS</h3>
+                <h2>Article Title 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum in omnis vitae. Consectetur, quam officiis velit voluptatem atque dolores aperiam debitis ducimus illo, architecto unde porro et mollitia nihil deleniti.</p>
+            </div>
+        </div></a>
+        
+        <a href="/article" style="text-decoration: none; color: black;"> <div class="category-pages-article">
+            <img src="/images/cat2.jpg" alt="Article Image">
+            <div class="category-pages-content">
+                <h3>FILE NEWS</h3>
+                <h2>Article Title 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptas explicabo exercitationem quia voluptate ullam modi non ipsa expedita eos! Necessitatibus adipisci esse eum, illum voluptatum recusandae cumque facilis voluptates!</p>
+            </div>
+        </div></a>
+       
+        <a href="/article" style="text-decoration: none; color: black;"> <div class="category-pages-article">
+            <img src="/images/cat1.jpg" alt="Article Image">
+            <div class="category-pages-content">
+                <h3>FILE NEWS</h3>
+                <h2>Article Title 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum in omnis vitae. Consectetur, quam officiis velit voluptatem atque dolores aperiam debitis ducimus illo, architecto unde porro et mollitia nihil deleniti.</p>
+            </div>
+        </div></a>
+       
+    </div>
+    
+    <!-- categories-list.ejs -->
+<div class="categories-list">
+    <h2>TRENDING NEWS</h2>
+    <ul>
+        <li>
+            <span class="categories-list-number"></span>
+            <a href="/article">Armed attack on guards in Istanbul</a>
+        </li>
+        <li>
+            <span class="categories-list-number"></span>
+            <a href="/article">LGS applications have started</a>
+        </li>
+        <li>
+            <span class="categories-list-number"></span>
+            <a href="/article/3">Mysterious 3,600-year-old warrior king cemetery found under the...</a>
+        </li>
+        <li>
+            <span class="categories-list-number"></span>
+            <a href="/article">Passenger bus overturned in Sivas: 2 dead, 18 injured</a>
+        </li>
+        <li>
+            <span class="categories-list-number"></span>
+            <a href="/article">The world is experiencing record temperatures: the situation will only...</a>
+        </li>
+        <li>
+            <span class="categories-list-number"></span>
+            <a href="/article">Eid traffic on the tracks: 2.8 million passengers carried</a>
+        </li>
+        <li>
+            <span class="categories-list-number"></span>
+            <a href="/article">Business representatives react to opposition's call for a "boycott"</a>
+        </li>
+        <li>
+            <span class="categories-list-number"></span>
+            <a href="/article">NASA's Solar probe repeats record close pass</a>
+        </li>
+    </ul>
+</div>
+
+<!-- <div class="category-pages-photo-focus">
+    <img src="/images/cat3.jpg" alt="Photo Focus">
+    <h3>Rain in Ankara</h3>
+    <p>PHOTO FOCUS</p>
+</div> -->
+</div>
+<%- include('partials/footer') %>

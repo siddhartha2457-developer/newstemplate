@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecast Section</title>
+    <style>
+       
+        .telecast-section {
+            /* background-color: #ffe35a; */
+            /* padding: 20px; */
+        }
+        .telecast-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .telecast-header a {
+            text-decoration: none;
+            color: black;
+        }
+        .telecast-content {
+
+            display: flex;
+            gap: 20px;
+            margin: 10px auto;
+            width: 90%;
+            flex-wrap: wrap;
+        }
+        .telecast-main {
+            flex: 2;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .telecast-main:hover h2 {
+            color: #cc0000;
+        }
+        .telecast-main img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .telecast-main h2 {
+            font-size: 20px;
+        }
+        .telecast-main p {
+            font-size: 14px;
+            color: #333;
+        }
+        .telecast-sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .telecast-item {
+            display: flex;
+            gap: 10px;
+            /* background-color: #ffe35a; */
+            padding: 5px;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .telecast-item:hover h4 {
+            color: #cc0000;
+        }
+        /* .telecast-item:hover img {
+            transform: scale(1.05);
+        } */
+
+        .telecast-item img {
+            width: 140px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <section class="telecast-section">
+        
+        <div class="telecast-content">
+            <div class="telecast-main">
+                <div class="telecast-header">
+                    <span>POLITICS</span>
+                    <!-- <a href="#">READ MORE: VIDEOS &gt;&gt;</a> -->
+                </div>
+                <img src="/images/modi.webp" alt="Main Video">
+                <h2>Waqf Bill: Congress says, 'Will challenge constitutionality of bill in top court'</h2>
+                <p>India's opposition party, Congress, says it will very soon challenge in the Supreme Court the constitutionality of the Waqf Reservation Bill...</p>
+            </div>
+            <div class="telecast-sidebar">
+                <div class="telecast-item">
+                    <img src="/images/thala.webp" alt="Thumbnail">
+                    <div>
+                        <h4>WORLD</h4>
+                        <p>Indian PM holds talks with Bangladesh chief adviser in Thailand</p>
+                    </div>
+                </div>
+                <div class="telecast-item">
+                    <img src="/images/thala.webp" alt="Thumbnail">
+                    <div>
+                        <h4>CLIMATE</h4>
+                        <p>Tulip season marks the beginning of spring in the Netherlands</p>
+                    </div>
+                </div>
+                <div class="telecast-item">
+                    <img src="/images/thala.webp" alt="Thumbnail">
+                    <div>
+                        <h4>CLIMATE</h4>
+                        <p>Kathmandu: AQI 'hazardous', climbs over 300</p>
+                    </div>
+                </div>
+                <div class="telecast-item">
+                    <img src="/images/thala.webp" alt="Thumbnail">
+                    <div>
+                        <h4>CLIMATE</h4>
+                        <p>Kathmandu: AQI 'hazardous', climbs over 300</p>
+                    </div>
+                </div>
+                <div class="telecast-item">
+                    <img src="/images/thala.webp" alt="Thumbnail">
+                    <div>
+                        <h4>CLIMATE</h4>
+                        <p>Kathmandu: AQI 'hazardous', climbs over 300</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

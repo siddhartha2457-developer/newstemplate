@@ -1,0 +1,100 @@
+<section class="news-section">
+    <!-- Sport Section -->
+    <h2 class="news-heading"><i class="fa fa-circle"></i> Sport</h2>
+    <div class="news-grid">
+      <div class="news-card large">
+        <img src="/images/article.jpg" alt="Galatasaray">
+        <div class="overlay">
+          <h3>The Turkish team with the highest income is Galatasaray</h3>
+        </div>
+      </div>
+      <div class="news-card large">
+        <img src="/images/article.jpg" alt="Internet of Things">
+        <div class="overlay">
+          <h3>Turkey will create a "National Internet of Things Platform"</h3>
+        </div>
+      </div>
+      <div class="news-card small">
+        <img src="/images/article.jpg" alt="Cup Winner">
+        <p class="category">Sport</p>
+        <h4>Who will win the cup?</h4>
+      </div>
+      <div class="news-card small">
+        <img src="/images/article.jpg" alt="Besiktas">
+        <p class="category">Sport</p>
+        <h4>Beşiktaş has only one goal left</h4>
+      </div>
+      <div class="news-card small">
+        <img src="/images/article.jpg" alt="Space Economy">
+        <p class="category">Science & Technology</p>
+        <h4>Turkey will put its signature on the "space economy"</h4>
+      </div>
+      <div class="news-card small">
+        <img src="/images/article.jpg" alt="Astronauts">
+        <p class="category">Science & Technology</p>
+        <h4>Astronauts have problems with balance and bone mass when they return from space</h4>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .news-section {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .news-heading {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .news-heading i {
+      color: red;
+      margin-right: 5px;
+    }
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .news-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .news-card.large {
+      grid-column: span 1;
+    }
+    .news-card.small {
+      display: flex;
+      flex-direction: column;
+    }
+    .news-card img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      color: white;
+    }
+    .overlay h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .news-card .category {
+      color: red;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    .news-card h4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  </style>
+  

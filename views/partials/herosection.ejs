@@ -1,0 +1,143 @@
+<section class="most-read">
+    <h2><span class="icon"></span> Most Read</h2>
+    <div class="main-news">
+        <img src="/images/petrol.jpg" alt="Main News">
+        <div class="news-content">
+            <span class="category">World</span>
+            <h3>U.S. rejects bill calling for cancellation of arms sales to Israel</h3>
+            <p>The U.S. Senate has rejected a bill by independent Senator Bernie Sanders that would have called for the cancellation of nearly $9 billion in arms sales to Israel.</p>
+        </div>
+        <!-- <div class="news-list">
+            <div class="news-item"><span class="news-number">1</span><p>TikTok's ban date is approaching: Who will buy it?</p></div>
+            <div class="news-item"><span class="news-number">2</span><p>South Korea's Constitutional Court upholds Yoon's impeachment</p></div>
+            <div class="news-item"><span class="news-number">3</span><p>Trump is confident that tariffs will save trillions of dollars, despite the...</p></div>
+            <div class="news-item"><span class="news-number">4</span><p>Car collides with ambulance carrying patients: 9 injured</p></div>
+            <div class="news-item"><span class="news-number">5</span><p>U.S. and China discuss maritime security against 'military risks'</p></div>
+            <div class="news-item"><span class="news-number">6</span><p>Bus carrying workers overturned in Çankırı: 23 injured</p></div>
+            <div class="news-item"><span class="news-number">7</span><p>Killer Israel kills 3 members of the same family in Lebanon</p></div>
+            <div class="news-item"><span class="news-number">8</span><p>Palestine: Israel's real goal is not to free prisoners, but to steal...</p></div>
+        </div> -->
+    </div>
+    <div class="additional-news">
+        <div class="news-box">
+            <img src="/images/guard.webp" alt="News Image">
+            <span class="category">Agenda</span>
+            <h4>28th anniversary of Alparslan Türkeş's death</h4>
+        </div>
+        <div class="news-box">
+            <img src="/images/guard.webp" alt="News Image">
+            <span class="category">World</span>
+            <h4>The falcon that terrorized everyone in the village was finally caught</h4>
+        </div>
+        <div class="news-box">
+            <img src="/images/guard.webp" alt="News Image">
+            <span class="category">Turkey</span>
+            <h4>Spring views from Ankara</h4>
+        </div>
+    </div>
+</section>
+
+<style>
+    .most-read {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        /* max-width: 1330px; */
+        width: 100%;
+        /* margin: auto; */
+    }
+    .most-read h2 {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .icon {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: red;
+        border-radius: 2px;
+        margin-right: 10px;
+    }
+    .main-news {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .main-news img {
+        width: 71%;
+        border-radius: 8px;
+    }
+    .news-content {
+        /* flex: 1; */
+        flex-direction: column;
+        max-width: 250px;
+    }
+    .category {
+        color: red;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    /* .news-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .news-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .news-number {
+        background: red;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    } */
+    .additional-news {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .news-box {
+        flex: 1;
+        background: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .news-box img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .most-read {
+            padding: 0;
+        }
+        .main-news {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-news img {
+            width: 100%;
+        }
+        .news-content {
+            max-width: 100%;
+            padding: 15px;
+        }
+        .additional-news {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+</style>

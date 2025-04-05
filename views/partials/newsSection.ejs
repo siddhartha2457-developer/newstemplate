@@ -1,0 +1,53 @@
+<div class="news-section">
+  <h2 class="news-title">📰 News</h2>
+  <div class="news-content1">
+      <div class="news-main">
+          <% let newsData = [ 
+              { title: 'Within a month, Putin... Trump, who confronted Zelensky, now openly threatens Putin', description: 'India has achieved a remarkable GDP growth rate of 8.2%, making it one of the fastest-growing economies in the world.', image: 'article.jpg' }, 
+              { title: 'Within a month, Putin... Trump, who confronted Zelensky, now openly threatens Putin', description: 'India tech sector continues to grow, attracting global investments and creating new jobs across the country.', image: 'article.jpg' }, 
+              { title: 'How Palestinians are celebrating Eid in Gaza, what happened on the ceasefire?', description: 'Monsoon floods have severely impacted northern regions of India, displacing thousands and causing widespread damage.', image: 'flood.webp' }, 
+              { title: 'How Palestinians are celebrating Eid in Gaza, what happened on the ceasefire?', description: 'Indian authorities are conducting large-scale rescue operations to evacuate flood victims and provide relief aid.', image: 'flood.webp' }, 
+              { title: 'How Palestinians are celebrating Eid in Gaza, what happened on the ceasefire?', description: 'Monsoon floods have severely impacted northern regions of India, displacing thousands and causing widespread damage.', image: 'flood.webp' }, 
+              { title: 'How Palestinians are celebrating Eid in Gaza, what happened on the ceasefire?', description: 'Indian authorities are conducting large-scale rescue operations to evacuate flood victims and provide relief aid.', image: 'flood.webp' }, 
+              { title: 'How Palestinians are celebrating Eid in Gaza, what happened on the ceasefire?', description: 'Monsoon floods have severely impacted northern regions of India, displacing thousands and causing widespread damage.', image: 'flood.webp' }, 
+              { title: 'How Palestinians are celebrating Eid in Gaza, what happened on the ceasefire?', description: 'Indian authorities are conducting large-scale rescue operations to evacuate flood victims and provide relief aid.', image: 'flood.webp' } 
+          ]; %>
+
+          <% newsData.slice(0, 2).forEach((news, index) => { %>
+            <a href="/article" style="text-decoration: none;color: black;">
+              <div class="news-card main">
+                <img src="/images/<%= news.image %>" alt="<%= news.title %>" class="news-image">
+                <p><%= news.title %></p>
+            </div>
+            </a>
+              
+          <% }); %>
+      </div>
+
+      <div class="news-list">
+          <% newsData.slice(2, 7).forEach((news, index) => { %>
+            <a href="/article" style="text-decoration: none ; color: black;"><div class="news-card">
+              <img src="/images/<%= news.image %>" alt="<%= news.title %>" class="news-thumbnail">
+              <p><%= news.title %></p>
+          </div></a>
+              
+          <% }); %>
+      </div>
+  </div>
+
+  <!-- <button class="see-more">See More →</button> -->
+  <div class="ad-section">
+  <div class="advertisement">
+    <h4>Advertisement</h4>
+    <div class="ad-placeholder">Ad Space</div>
+  </div>
+  <div class="advertisement">
+    <h4>Advertisement</h4>
+    <div class="ad-placeholder">Ad Space</div>
+  </div>
+  <div class="advertisement">
+    <h4>Advertisement</h4>
+    <div class="ad-placeholder">Ad Space</div>
+  </div>
+  </div>
+</div>

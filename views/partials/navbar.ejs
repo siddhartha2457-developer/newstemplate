@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: white;
+        color: black;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        transition: max-height 0.3s ease-in-out;
+        font-size: 18px;
+      }
+      .navbar li {
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+      .navbar a:hover {
+        color: #ffcc00;
+      }
+      .menu-toggle {
+        display: none;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+      }
+      @media (max-width: 780px) {
+        .navbar ul {
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          background: #222;
+          width: 100%;
+          padding: 10px;
+          display: none;
+        }
+        .navbar ul.active {
+          display: flex;
+          z-index: 1000;
+          text-align: center;
+        }
+        .menu-toggle {
+          display: block;
+        }
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <img src="/images/logo.jpg" style="width: 140px; height: 85px;">
+        <!-- <h1>SHILPO CHARCHA</h1> -->
+        <button class="menu-toggle">☰</button>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          
+<a href="/categories"><li>National</li></a>
+<a href="/categories"><li>World</li></a>
+<a href="/categories"><li>Sports</li></a>
+<a href="/categories"><li>Entertainment</li></a>
+<a href="/categories"><li>Health</li></a>
+
+        </ul>
+    </nav>
+
+    <script>
+      document.querySelector(".menu-toggle").addEventListener("click", function() {
+        document.querySelector(".navbar ul").classList.toggle("active");
+      });
+    </script>
+</body>
+</html>

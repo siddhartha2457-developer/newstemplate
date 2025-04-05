@@ -1,0 +1,42 @@
+<!-- article.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="/css/articlepage.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body style="margin: 0;">
+    <%- include('partials/navbar2') %>
+    <%- include('partials/top-heading') %>
+    <div class="article-page-container">
+        <div class="article-page-main">
+            <div class="article-page-header">
+                <span class="article-page-category">Defense</span>
+                <span class="article-page-intro">NEWS INTRODUCTION</span>
+                <!-- <span class="article-page-date">15.03.2025 10:07</span> -->
+                <span class="article-page-update">LAST UPDATE 15.03.2025 10:12</span>
+            </div>
+            <h1 class="article-page-title">Coast Guard Command Headquarters Data Center was put into service</h1>
+            <p class="article-page-summary">The Coast Guard Command Headquarters Data Center, which is considered as the first stage of the SahilNET Project, was put into use.</p>
+            <img src="/images/openai.jpg" alt="Article Image" class="article-page-image">
+            <p class="article-page-content">
+                According to the statement made by HAVELSAN, <span class="highlight">Presidential Presidency of Defence Industries (SSB)</span> coordinated at IDEF on September 15, 2021.Coast Guard Commander Vice Admiral Ahmet Kendir, whose evaluations at the data center opening ceremony were included in the statement, emphasized that the command has grown in many respects in recent years, that this growth has created new technological needs, and that the Headquarters Data Center, which was commissioned within the scope of these needs, is extremely important.
+
+                Presidential Defense Industry Vice President Mustafa Murat Şeker stated that they are always ready as the Presidency for the technological needs of the Coast Guard Command and expressed that they are happy for the successful completion of this first phase of the SahilNET project.
+                
+                HAVELSAN General Manager Mehmet Akif Nacar stated that they provide services in different fields in order to equip the Coast Guard Command with new generation technologies, and that they aim to create a complete and holistic data management model between systems with the SahilNET project.
+                
+                According to the statement, in the SahilNET project, apart from data centers, many software It will be used locally.  Presidential Defense Industry Vice President Mustafa Murat Şeker stated that they are always ready as the Presidency for the technological needs of the Coast Guard Command and expressed that they are happy for the successful completion of this first phase of the SahilNET project. HAVELSAN General Manager Mehmet Akif Nacar stated that they provide services in different fields in order to equip the Coast Guard Command with new generation technologies, and that they aim to create a complete and holistic data management model between systems with the SahilNET project. According to the statement, in the SahilNET project, apart from data centers, many software It will be used locally.
+            </p>
+        </div>
+        
+        <div >
+            <%- include('partials/readinglist') %>
+        </div>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>

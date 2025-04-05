@@ -1,0 +1,40 @@
+<div class="container">
+  <!-- Left Section - Video Player -->
+  <div class="left-section">
+      <div class="video-player">
+          <img src="/images/breaking.jpg" alt="Breaking News">
+          <button class="play-button">▶</button>
+      </div>
+      <div class="live-info">
+          <span class="live-indicator">● LIVE</span>
+          <p class="caption-text">
+              The English closed captions in news programs are generated through automatic speech recognition technology. Some parts may not exactly match up with the words spoken.
+          </p>
+      </div>
+  </div>
+
+  <!-- Right Section - Sidebar -->
+  <div class="right-section">
+      <div class="live-details">
+          <h3>Weather Report</h3>
+          <p>Gurgaon: 30°C, Sunny</p>
+          <button class="detail-button">Detail</button>
+      </div>
+
+      <!-- Watch More Section -->
+      <h3 class="watch-more-title">Watch More</h3>
+
+      <% let watchMoreItems = [1, 2, 3, 4]; %>
+      <% watchMoreItems.forEach(item => { %>
+          <div class="watch-more-item">
+              <div class="thumbnail">
+                  <img src="/images/headline.jpg" alt="Headline">
+              </div>
+              <div>
+                  <p class="watch-more-text">NEWSLINE <%= 17 + item %>:00</p>
+                  <p class="watch-more-time">March 31, <%= 17 + item %>:00</p>
+              </div>
+          </div>
+      <% }); %>
+  </div>
+</div>
